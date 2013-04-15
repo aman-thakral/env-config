@@ -20,6 +20,8 @@
 (when window-system
     (color-theme-dark-laptop))
 
+(add-hook 'before-save-hook 'delete-trailing-whitespace)
+
 ;;Clojure setup
 (require 'paredit)
 (require 'highlight-parentheses)
@@ -31,7 +33,6 @@
 (setq hl-paren-colors
 '("red1" "orange1" "yellow1" "green1" "cyan1"
 "slateblue1" "magenta1" "purple"))
-
 
 (require 'auto-complete-config)
 (ac-config-default)
