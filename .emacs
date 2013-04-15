@@ -42,6 +42,7 @@
 (global-set-key "\C-y" 'clipboard-yank)
 (global-set-key [home] 'beginning-of-line)
 (global-set-key [end] 'end-of-line)
+(global-set-key [delete] 'delete-char)
 
 ;; fix the PATH variable
 (defun set-exec-path-from-shell-PATH ()
