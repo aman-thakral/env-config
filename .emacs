@@ -40,6 +40,8 @@
 (global-set-key "\C-w" 'clipboard-kill-region)
 (global-set-key "\M-w" 'clipboard-kill-ring-save)
 (global-set-key "\C-y" 'clipboard-yank)
+(global-set-key [home] 'beginning-of-line)
+(global-set-key [end] 'end-of-line)
 
 ;; fix the PATH variable
 (defun set-exec-path-from-shell-PATH ()
