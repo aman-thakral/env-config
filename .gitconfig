@@ -1,0 +1,30 @@
+[color]
+    ui = true
+    branch = auto
+    diff = auto
+    status = auto
+    interactive = auto
+[core]
+   editor=vim
+	excludesfile = /Users/athakral/.gitignore_global
+
+[remote "origin"]
+    push = HEAD
+[user]
+    email = athakral@climate.com
+    name = Aman Thakral
+[merge]
+    tool = diffmerge
+	[mergetool "diffmerge"]
+	cmd = /usr/local/bin/dmerge "$PWD/$LOCAL" "$PWD/$BASE" "$PWD/$REMOTE" "$PWD/$MERGED" 
+	trustExitCode = false
+	keepBackup = false
+
+[alias]
+    st = status
+    ci =  commit
+    br = branch
+    co = checkout
+    df = diff
+    lg = log -p
+    rb = rebase
