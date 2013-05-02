@@ -77,19 +77,25 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(ein:complete-on-dot t)
- '(ein:use-auto-complete t)
  '(nrepl-lein-command "lein2"))
-(custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- )
 
-(defun sh ()
-  (interactive)
-  (ansi-term "/bin/zsh"))
+
+;;Ipython setup
+(load-file (expand-file-name "~/.emacs.d/emacs-for-python/epy-init.el"))
+(epy-setup-ipython)
+(setq nose-global-name "/export/disk0/wb/python2.6/bin/nosetests")
+(setq
+ python-shell-extra-pythonpaths (quote ("/Users/athakral/dev/weatherbill/python" "/usr/local/lib"))
+ python-shell-interpreter "/export/disk0/wb/python2.6/bin/ipython"
+ python-shell-interpreter-args "--colors=Linux"
+ python-shell-prompt-regexp "In \\[[0-9]+\\]: "
+ python-shell-prompt-output-regexp "Out\\[[0-9]+\\]: "
+ python-shell-completion-setup-code
+   "from IPython.core.completerlib import module_completion"
+ python-shell-completion-module-string-code
+   "';'.join(module_completion('''%s'''))\n"
+ python-shell-completion-string-code
+   "';'.join(get_ipython().Completer.all_completions('''%s'''))\n")
 
 
 (defadvice ansi-term (after advise-ansi-term-coding-system)
@@ -112,3 +118,9 @@
 ;;(set-keyboard-coding-system 'utf-8)
 ;;(set-selection-coding-system 'utf-8)
 ;;(prefer-coding-system 'utf-8)
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )
