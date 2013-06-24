@@ -17,10 +17,6 @@ alias pep8=/export/disk0/wb/python2.6/bin/pep8
 alias py26=/export/disk0/wb/python2.6/bin/python2.6
 alias nosetests=/export/disk0/wb/python2.6/bin/nosetests
 
-export ru1="ru1.ci.climatedna.net"
-export ru2="ru2.ci.climatedna.net"
-export ru3="ru3.ci.climatedna.net"
-
 export PATH="$WB/tools:$PATH"
 export PATH="$WB/python/scripts:$PATH"
 export PATH="~/bin/:$PATH"
