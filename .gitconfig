@@ -5,8 +5,8 @@
     status = auto
     interactive = auto
 [core]
-   editor=vim
-	excludesfile = /Users/athakral/.gitignore_global
+    editor = vim
+    excludesfile = /Users/athakral/.gitignore_global
 
 [remote "origin"]
     push = HEAD
