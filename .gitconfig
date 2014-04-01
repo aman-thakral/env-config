@@ -6,12 +6,12 @@
     interactive = auto
 [core]
     editor = vim
-    excludesfile = /Users/athakral/.gitignore_global
+    excludesfile = ~/.gitignore_global
 
 [remote "origin"]
     push = HEAD
 [user]
-    email = athakral@climate.com
+    email = {{ email }}
     name = Aman Thakral
 [merge]
     tool = diffmerge
