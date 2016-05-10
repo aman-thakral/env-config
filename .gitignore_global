@@ -1,8 +1,8 @@
+*~
+\#*
 .lein-repl-history
 build/
 target/
 *.log
 *.sqlite
 .pydevproject
-.dir-locals.el
-

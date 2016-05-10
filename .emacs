@@ -1,10 +1,14 @@
-(package-initialize)
+(require 'package)
 
 ;; include MELPA
 (add-to-list 'package-archives
   '("melpa" . "http://melpa.milkbox.net/packages/"))
 ;;  '("marmalade" . "http://marmalade-repo.org/packages/"))
 
+(add-to-list 'package-archives
+             '("elpy" . "https://jorgenschaefer.github.io/packages/"))
+
+(package-initialize)
 ;(add-hook 'slime-repl-mode-hook 'clojure-mode-font-lock-setup)
 
 ;(load-file "~/bin/cedet-1.0.1/common/cedet.el")
@@ -19,6 +23,7 @@
 
 (setq-default indent-tabs-mode nil)    ; use only spaces and no tabs
 (setq default-tab-width 4)
+
 
 (elpy-enable)
 (elpy-use-ipython)
@@ -41,6 +46,11 @@
 (when (fboundp 'windmove-default-keybindings)
   (windmove-default-keybindings))
 
+(require 'virtualenvwrapper)
+(venv-initialize-interactive-shells) ;; if you want interactive shell support
+(venv-initialize-eshell) ;; if you want eshell support
+(setq venv-location "~/.virtualenvs/")
+
 ;; fix the PATH variable
 ;; (defun set-exec-path-from-shell-PATH ()
 ;;   (let ((path-from-shell (shell-command-to-string "$SHELL -i -c 'echo $PATH'")))
@@ -52,13 +62,14 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(elpy-default-minor-modes (quote (eldoc-mode flymake-mode yas-minor-mode auto-complete-mode)))
- '(elpy-rpc-python-command "~/.virtualenvs/atigeo/bin/python")
+ '(elpy-rpc-python-command "python")
  '(python-check-command "flake8")
  '(python-indent-guess-indent-offset nil)
- '(python-shell-interpreter "~/.virtualenvs/atigeo/bin/ipython")
+ '(python-shell-interpreter "ipython")
  '(python-shell-interpreter-args "")
  '(python-shell-prompt-output-regexp "Out\\[[0-9]+\\]: ")
- '(python-shell-prompt-regexp "In \\[[0-9]+\\]: "))
+ '(python-shell-prompt-regexp "In \\[[0-9]+\\]: ")
+ '(safe-local-variable-values (quote ((project-venv-name . "askwhen")))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

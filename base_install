@@ -1,0 +1,17 @@
+#!/bin/bash -x
+
+set -o nounset
+set -o errexit
+
+REPO="https://s3.amazonaws.com/sciflow/builds"
+
+if [[ ! -f /usr/lib/jvm/java-7-oracle/bin/java ]]; then
+    #==Java7==
+    wget -nc $REPO/jdk-7-linux-x64.tar.gz
+    sudo tar -zxf jdk-7-linux-x64.tar.gz
+    sudo mv jdk1.7.0_55 /usr/lib/jvm/java-7-oracle
+    sudo update-alternatives --install "/usr/bin/java7" "java7" "/usr/lib/jvm/java-7-oracle/bin/java" 1
+    sudo update-alternatives --install "/usr/bin/java7c" "java7c" "/usr/lib/jvm/java-7-oracle/bin/javac" 1
+    sudo update-alternatives --install "/usr/bin/java7ws" "java7ws" "/usr/lib/jvm/java-7-oracle/bin/javaws" 1
+    rm -rf jdk-7-linux-x64.tar.gz
+fi
