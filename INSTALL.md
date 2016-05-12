@@ -6,7 +6,7 @@ curl s3cmd wget git python-dev \
 python-software-properties \
 vim emacs \
 libblas-dev liblapack-dev libatlas-base-dev gfortran \
-libfreetype6-dev 
+libfreetype6-dev
 
 
 # Global Python
@@ -20,6 +20,8 @@ pip install yapf
 color-theme
 elpy
 virtualenvwrapper
+yaml-mode
+json-mode
 
 # Symlinks
 ln -s ~/dev/env-config/flake8 ~/.config/flake8

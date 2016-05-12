@@ -4,21 +4,24 @@
     diff = auto
     status = auto
     interactive = auto
+
 [core]
     editor = vim
     excludesfile = ~/.gitignore_global
 
 [remote "origin"]
     push = HEAD
+
 [user]
-    email = {{ email }}
     name = Aman Thakral
+
 [merge]
     tool = diffmerge
-	[mergetool "diffmerge"]
-	cmd = /usr/local/bin/dmerge "$PWD/$LOCAL" "$PWD/$BASE" "$PWD/$REMOTE" "$PWD/$MERGED" 
-	trustExitCode = false
-	keepBackup = false
+
+[mergetool "diffmerge"]
+    cmd = /usr/local/bin/dmerge "$PWD/$LOCAL" "$PWD/$BASE" "$PWD/$REMOTE" "$PWD/$MERGED" 
+    trustExitCode = false
+    keepBackup = true
 
 [alias]
     st = status
