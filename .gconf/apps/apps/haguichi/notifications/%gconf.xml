@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<gconf>
+	<entry name="member_online" mtime="1462813855" type="bool" value="true"/>
+	<entry name="member_offline" mtime="1462813855" type="bool" value="true"/>
+	<entry name="member_leave" mtime="1462813855" type="bool" value="true"/>
+	<entry name="member_join" mtime="1462813855" type="bool" value="true"/>
+	<entry name="connection_loss" mtime="1462813855" type="bool" value="true"/>
+</gconf>

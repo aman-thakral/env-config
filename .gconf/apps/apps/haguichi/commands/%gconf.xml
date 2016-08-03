@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<gconf>
+	<entry name="super_user" mtime="1462813855" type="string">
+		<stringvalue>auto</stringvalue>
+	</entry>
+	<entry name="customizable" mtime="1462813855" type="list" ltype="string">
+		<li type="string">
+			<stringvalue>true;true;folder-remote;_Browse Shares;%FILEMANAGER smb://%A/;%FILEMANAGER smb://[%A]/;IPv4</stringvalue>
+		</li>
+		<li type="string">
+			<stringvalue>true;false;preferences-desktop-remote-desktop;_View Remote Desktop;%REMOTEDESKTOP %A;%REMOTEDESKTOP [%A];IPv4</stringvalue>
+		</li>
+		<li type="string">
+			<stringvalue>true;false;utilities-terminal;_Ping;%TERMINAL ping %A;%TERMINAL ping6 %A;IPv4</stringvalue>
+		</li>
+	</entry>
+</gconf>

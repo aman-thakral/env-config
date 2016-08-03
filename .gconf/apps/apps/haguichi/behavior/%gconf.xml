@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<gconf>
+	<entry name="start_in_tray" mtime="1462813855" type="bool" value="false"/>
+	<entry name="update_network_list" mtime="1462813855" type="bool" value="true"/>
+	<entry name="disconnect_on_quit" mtime="1462813855" type="bool" value="true"/>
+	<entry name="reconnect_on_connection_loss" mtime="1462813855" type="bool" value="true"/>
+	<entry name="connect_on_startup" mtime="1462813855" type="bool" value="false"/>
+</gconf>

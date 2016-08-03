@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<gconf>
+	<entry name="update_interval" mtime="1462813855" type="float" value="15"/>
+	<entry name="reconnect_interval" mtime="1462813855" type="float" value="30"/>
+	<entry name="command_timeout" mtime="1462813855" type="float" value="60"/>
+	<entry name="protocol" mtime="1462813855" type="string">
+		<stringvalue>both</stringvalue>
+	</entry>
+	<entry name="nickname" mtime="1462813884" type="string">
+		<stringvalue>aman</stringvalue>
+	</entry>
+</gconf>

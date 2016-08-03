@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<gconf>
+	<entry name="y_pos" mtime="1465234379" type="int" value="187"/>
+	<entry name="x_pos" mtime="1465234379" type="int" value="3477"/>
+	<entry name="width" mtime="1465234379" type="int" value="250"/>
+	<entry name="sort_by" mtime="1462813855" type="string">
+		<stringvalue>name</stringvalue>
+	</entry>
+	<entry name="show_tray_icon" mtime="1462813855" type="bool" value="true"/>
+	<entry name="show_statusbar" mtime="1462813855" type="bool" value="true"/>
+	<entry name="show_offline_members" mtime="1462813855" type="bool" value="true"/>
+	<entry name="show_alternating_row_colors" mtime="1462813855" type="bool" value="false"/>
+	<entry name="network_template_large" mtime="1462813855" type="string">
+		<stringvalue>&lt;b&gt;%N&lt;/b&gt; (%O/%T)%_*&lt;br&gt;&lt;span size=&quot;smaller&quot;&gt;%S&lt;/span&gt;</stringvalue>
+	</entry>
+	<entry name="network_template_small" mtime="1462813855" type="string">
+		<stringvalue>&lt;b&gt;%N&lt;/b&gt; (%O/%T)%_*</stringvalue>
+	</entry>
+	<entry name="network_list_layout" mtime="1462813855" type="string">
+		<stringvalue>normal</stringvalue>
+	</entry>
+	<entry name="network_list_icon_size_large" mtime="1462813855" type="int" value="18"/>
+	<entry name="network_list_icon_size_small" mtime="1462813855" type="int" value="12"/>
+	<entry name="member_template_large" mtime="1462813855" type="string">
+		<stringvalue>%N%_*&lt;br&gt;&lt;span size=&quot;smaller&quot;&gt;%S &lt;i&gt;%A&lt;/i&gt;&lt;/span&gt;</stringvalue>
+	</entry>
+	<entry name="member_template_small" mtime="1462813855" type="string">
+		<stringvalue>%N%_*</stringvalue>
+	</entry>
+	<entry name="height" mtime="1465234379" type="int" value="640"/>
+	<entry name="collapsed_networks" mtime="1465187926" type="list" ltype="string">
+	</entry>
+</gconf>
