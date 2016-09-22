@@ -1,0 +1,11 @@
+{
+ "display_name": "Python (mb-analytics)", 
+ "language": "python", 
+ "argv": [
+  "/home/aman/.virtualenvs/mb-analytics/bin/python", 
+  "-m", 
+  "ipykernel", 
+  "-f", 
+  "{connection_file}"
+ ]
+}

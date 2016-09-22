@@ -1,0 +1,11 @@
+{
+ "display_name": "Python (atigeo-cyber)", 
+ "language": "python", 
+ "argv": [
+  "/home/aman/.virtualenvs/atigeo-cyber/bin/python", 
+  "-m", 
+  "ipykernel", 
+  "-f", 
+  "{connection_file}"
+ ]
+}
